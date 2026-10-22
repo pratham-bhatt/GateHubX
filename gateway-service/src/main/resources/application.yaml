@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${GATEWAY_APP_NAME}
+
+server:
+  port: ${GATEWAY_PORT}
+
+info:
+  app:
+    name: ${INFO_NAME}
+    description: ${INFO_DESCRIPTION}

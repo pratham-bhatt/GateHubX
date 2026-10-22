@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ${MANAGER_APP_NAME}
+
+server:
+  port: ${MANAGER_PORT}
+
+info:
+  app:
+    name: ${INFO_NAME}
+    description: ${INFO_DESCRIPTION}
