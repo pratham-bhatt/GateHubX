@@ -2,6 +2,18 @@ spring:
   application:
     name: ${MANAGER_APP_NAME}
 
+  datasource:
+    url: ${DATASOURCE_URL}
+    username: ${USER_NAME}
+    password: ${PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
 server:
   port: ${MANAGER_PORT}
 
@@ -9,3 +21,8 @@ info:
   app:
     name: ${INFO_NAME}
     description: ${INFO_DESCRIPTION}
+
+logging:
+  level:
+    org.flywaydb: DEBUG
+    org.springframework.boot.flyway: DEBUG
