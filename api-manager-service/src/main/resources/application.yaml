@@ -26,3 +26,8 @@ logging:
   level:
     org.flywaydb: DEBUG
     org.springframework.boot.flyway: DEBUG
+
+security:
+  jwt:
+    expiration-seconds: ${EXPIRATION_SECONDS}
+    secret: ${SECRET_KEY}
